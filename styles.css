@@ -1,1 +1,138 @@
 /* your code here */
+body {
+  background: #10e890;
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.product {
+  background: #fff;
+  width: 700px;
+  box-shadow: 0 8px 32px rgba(25, 150, 89, 0.2);
+  border-radius: 18px;
+  display: flex;
+  padding: 40px;
+  gap: 32px;
+}
+
+.product__photo {
+  flex: 1;
+}
+
+.photo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.photo-main > img {
+  width: 230px;
+  height: 230px;
+  object-fit: contain;
+  border-radius: 24px;
+  box-shadow: 0 4px 16px rgba(30, 150, 89, 0.20);
+  margin-bottom: 22px;
+}
+
+.photo-album ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+}
+
+.photo-album img {
+  width: 42px;
+  height: 42px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(25, 150, 89, 0.10);
+  background: #eee;
+  transition: transform 0.15s;
+}
+.photo-album img:hover {
+  transform: scale(1.07);
+}
+
+.product__info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  margin: 0 0 8px 0;
+  color: #1b5e20;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.code {
+  color: #bbb;
+  font-size: 0.95rem;
+  margin-bottom: 28px;
+}
+
+.price {
+  color: #fa5252;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.variant {
+  margin-bottom: 18px;
+}
+.variant span {
+  color: #333;
+  font-weight: 500;
+  margin-right: 10px;
+}
+.color-select {
+  width: 30px;
+  height: 30px;
+  margin: 0 4px;
+  border-radius: 50%;
+  border: 2px solid #eee;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(34, 139, 34, 0.10);
+}
+.color-select:hover {
+  border: 2px solid #10e890;
+}
+
+.description h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.1rem;
+  color: #777;
+  letter-spacing: 1px;
+}
+
+.description ul {
+  margin: 0 0 20px 16px;
+  padding: 0;
+  color: #555;
+  font-size: 1.04rem;
+}
+
+.add-to-cart {
+  background: #fa5252;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 16px 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+  box-shadow: 0 2px 6px rgba(30, 150, 89, 0.15);
+  cursor: pointer;
+  letter-spacing: 1px;
+  margin-top: auto;
+  transition: background 0.18s;
+}
+.add-to-cart:hover {
+  background: #c0392b;
+}
